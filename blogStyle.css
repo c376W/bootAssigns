@@ -1,12 +1,15 @@
 body{
+	
+	max-width: 700px;
 	width:50%;
-	margin-left:25%;
+	margin:auto;
 	border: 20px solid #dedfe0;
 	padding: 2%;
 }
 
 .blue{
 	color:#4be2e5;
+	letter-spacing: 0.2rem;
 }
 
 .leftB{
