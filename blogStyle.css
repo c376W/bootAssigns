@@ -1,0 +1,15 @@
+body{
+	width:50%;
+	margin-left:25%;
+	border: 20px solid #dedfe0;
+	padding: 2%;
+}
+
+.blue{
+	color:#4be2e5;
+}
+
+.leftB{
+	border-left:5px solid #dedfe0;
+	padding-left:1%;
+}
