@@ -9,6 +9,8 @@ body{
 html{
 	height:100%;
 }
+
+
 #content{
 	text-align: center;
 	padding-top:25%;
@@ -35,5 +37,19 @@ hr{
 .kittyTitle{
 	padding-top:20px;
 	padding-bottom:50px;
+}
+
+.buttonH{
+	background:white;
+	color:black;
+	transition-duration: 0.4s;
+	border-radius: 30px;
+	border:5px solid black;
+}
+
+.buttonH:hover{
+	background:#e2a36f;
+	color:white;
+	border:5px solid black;
 }
 
