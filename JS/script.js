@@ -42,3 +42,46 @@ const kebabToSnake=(str)=>{
 	}
 	return newStr;
 }
+
+//Print Reverse
+
+const printReverse=(list)=>{
+	list.forEach(function(item,i){
+		console.log(list[list.length-1-i]);
+	})
+
+}
+
+//isUniform
+
+const isUniform=(list)=>{
+	let flag=true;
+	list.forEach(function(item){
+		if(item!==list[list.length-1]){
+			flag= false;
+		}
+	})
+	return flag;
+}
+
+//sumArray
+
+const sumArray=(arr)=>{
+	let sum=0;
+	arr.forEach(function(num){
+		sum=sum+num;
+	})
+	return sum;
+}
+
+//max
+
+const max=(arr)=>{
+	maxNum=-1000000000;
+	arr.forEach(function(num){
+		if(num>maxNum){
+			maxNum=num;
+		}
+	})
+	return maxNum;
+}
