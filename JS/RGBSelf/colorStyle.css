@@ -5,16 +5,38 @@ body{
 h2{
 	color:white;
 	text-align: center;
+	margin:0;
+	padding:8px;
 }
 
+h5{
+	color:#6490d6;
+	margin:0;
+}
+
+.title{
+	background-color: #6490d6;
+}
 .square{
 	background-color: purple;
 	width:150px;
 	height:150px;
 	border-radius: 15px;
-	margin:1.66%;
+	margin:10px;
+}
+
+.container{
+	padding-top: 20px;
 }
 
 .row{
 	justify-content: center;
+}
+
+.menu{
+	margin: 0 10%;
+}
+
+.menu-bk{
+	background-color: white;
 }
