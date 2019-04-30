@@ -85,3 +85,14 @@ const max=(arr)=>{
 	})
 	return maxNum;
 }
+
+//Change color of the background:
+
+let button=document.querySelector("button");
+let bg=document.querySelector("body");
+
+button.addEventListener("click",changeColor)
+
+function changeColor(){
+	bg.style.background="black";
+}
