@@ -6,7 +6,7 @@ h2{
 	color:white;
 	text-align: center;
 	margin:0;
-	padding:8px;
+	padding:2px;
 }
 
 h5{
@@ -14,9 +14,7 @@ h5{
 	margin:0;
 }
 
-.title{
-	background-color: #6490d6;
-}
+
 .square{
 	background-color: purple;
 	width:150px;
@@ -39,4 +37,8 @@ h5{
 
 .menu-bk{
 	background-color: white;
+}
+
+#title{
+	background-color: #6490d6;
 }
