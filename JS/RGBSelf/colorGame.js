@@ -3,11 +3,13 @@ var mode="hard";
 var colors=assignColor(mode);
 var squares=document.querySelectorAll(".square");
 var colorDisplay=document.getElementById("colorDisplay");
-var pickedColor=colors[2];
+var pickedColor=colors[3];
 var title=document.querySelector("#title");
 var newColor=document.querySelector("#newColor");
-
-
+var message=document.querySelector("#message");
+var easyM=document.querySelector("#easyM");
+var hardM=document.querySelector("#hardM");
+var l3rows=document.querySelector("#l3rows");
 
 //Events
 
@@ -19,17 +21,29 @@ for(var i =0; i<colors.length; i++){
 		if(pickedColor===this.style.backgroundColor){
 			paintAll(pickedColor);
 			title.style.backgroundColor=pickedColor;
+			message.textContent="Correct!";
 
 		} else{
 			this.style.backgroundColor="black";
+			message.textContent="Try again!";
 		}
 
 	})
-}
+};
 
 	//New color event:
-newColor.addEventListener("click",function(){
-	//Assign random colors to each squares.
+newColor.addEventListener("click", function(){
+	title.style.backgroundColor="#6490d6";
+});
+	//Easy/Hard mode event:
+easyM.addEventListener("click",function(){
+	mode="easy";
+	l3rows.classList.add("invisible");
+});
+
+hardM.addEventListener("click",function(){
+	mode="hard";
+	l3rows.classList.remove("invisible");
 })
 
 
@@ -63,6 +77,12 @@ function assignColor(mode){
 			arr.push(randomClr);
 		}
 	}
+	return arr;
+}
+
+function resetColors(arr,mode){
+	arr=[];
+	arr=assignColor(mode);
 	return arr;
 }
 

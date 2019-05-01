@@ -39,6 +39,14 @@ h5{
 	background-color: white;
 }
 
+.invisible{
+	background-color:black;
+}
+
 #title{
 	background-color: #6490d6;
+}
+
+#message{
+	width:100px;
 }
